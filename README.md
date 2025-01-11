@@ -1,4 +1,4 @@
-# [QBOX ] RM-SELLSHOPS
+# [ QBOX ] RM-SELLSHOPS
 
 :shopping_cart:   | __**Features**__:
 
