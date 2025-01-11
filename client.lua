@@ -4,7 +4,6 @@ local function openSellMenu(items)
     local menu = {}
 
     for _, item in ipairs(items) do
-        -- Fetch item count from ox_inventory
         local itemData = ox_inventory:Search('count', item.name)
         local itemCount = 0
 
@@ -74,9 +73,6 @@ local function openSellMenu(items)
     lib.showContext("sell_menu")
 end
 
--- Rest of your client script remains unchanged
-
-
 local function handleDialogOption(option)
     if option.id == "sell_fruits" and option.items then
         openSellMenu(option.items)
@@ -122,7 +118,6 @@ CreateThread(function()
             SetEntityInvincible(ped, true)
             TaskStartScenarioInPlace(ped, 'WORLD_HUMAN_STAND_IMPATIENT', 0, true)
 
-            -- Passive behavior to prevent aggression
             SetBlockingOfNonTemporaryEvents(ped, true)
             SetPedCanRagdoll(ped, false)
             SetPedConfigFlag(ped, 287, true) -- Disable being scared
@@ -139,7 +134,6 @@ CreateThread(function()
                 },
             })
 
-            -- Blip logic
             if shop.blip and shop.blip.enabled then
                 local blip = AddBlipForCoord(shop.coords.x, shop.coords.y, shop.coords.z)
                 SetBlipSprite(blip, shop.blip.sprite)
