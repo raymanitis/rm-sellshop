@@ -11,3 +11,6 @@ __**Dependencies**__:
 - [ox_inventory](https://github.com/overextended/ox_inventory)
 - [ox_target](https://github.com/overextended/ox_target) 
 - [mt_lib](https://github.com/MT-Scripts/mt_lib)
+
+
+[**Preview**](https://streamable.com/39plkc)
